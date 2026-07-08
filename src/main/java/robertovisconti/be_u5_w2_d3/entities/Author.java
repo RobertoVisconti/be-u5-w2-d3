@@ -42,4 +42,20 @@ public class Author {
         this.dateOfBirth = dateOfBirth;
         this.avatar = "https://ui-avatars.com/api/?name=" + name + "+" + surname;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 }
