@@ -23,6 +23,12 @@ public class ErrorsHandler {
         return new ErrorsPayload(ex.getMessage(), LocalDateTime.now());
     }
 
+    @ExceptionHandler(BlogNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ErrorsPayload handleBlogNotFound(BlogNotFoundException ex) {
+        return new ErrorsPayload(ex.getMessage(), LocalDateTime.now());
+    }
+
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ErrorsPayload handleGenericException(Exception ex) {
