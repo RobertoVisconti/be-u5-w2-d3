@@ -45,4 +45,28 @@ public class Blog {
         this.tempoDiLettura = tempoDiLettura;
         this.cover = "https://picsum.photos/200/300";
     }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setTitolo(String titolo) {
+        this.titolo = titolo;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    public void setContenuto(String contenuto) {
+        this.contenuto = contenuto;
+    }
+
+    public void setTempoDiLettura(int tempoDiLettura) {
+        this.tempoDiLettura = tempoDiLettura;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
 }
